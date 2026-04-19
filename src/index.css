@@ -1,0 +1,41 @@
+/* space grotesk */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff9d00;
+  --color-bgClr: #080c1c;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+body {
+  @apply font-space-grotesk bg-neutral-950;
+}
+button {
+  @apply cursor-pointer;
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 lg:px-[5vw] w-full mx-auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a,
+  span {
+    @apply text-white;
+  }
+  h2 {
+    @apply text-4xl font-bold md:text-6xl;
+  }
+  p {
+    @apply text-gray-200;
+  }
+  .text-line {
+    @apply overflow-hidden text-nowrap;
+  }
+}
